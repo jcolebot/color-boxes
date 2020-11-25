@@ -1,0 +1,19 @@
+.square{
+    height: 100px;
+    background-color: whitesmoke;
+    width: 100px;
+    margin: auto;
+    border: 1px solid black;
+    z-index: 1;
+    padding: 0;
+    float: left;
+    transition: box-shadow .3s;
+}
+.square:hover {
+    box-shadow: 0 0 30px white; 
+}
+body {
+    margin: auto;
+    width: 918px;
+    background-color: black;
+}
