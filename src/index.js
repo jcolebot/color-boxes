@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
+// class randomizes colors based on rgb values
 class Square extends React.Component {
     randomColor(event) {
         const r = Math.floor(Math.random() * 256);
@@ -12,6 +12,7 @@ class Square extends React.Component {
         let currentBox = event.target
         currentBox.style.backgroundColor = bgColor
     }
+    // set to randomize color on mouseover event
     render() {
       return (
         <div className="square" onMouseOver={this.randomColor}>
@@ -20,6 +21,7 @@ class Square extends React.Component {
       );
     }
 }
+//  for loop to create squares
 function Main (){
     const squares = []
     for (let i = 0; i < 108; i++)
